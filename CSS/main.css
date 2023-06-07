@@ -1,0 +1,569 @@
+body {
+    background-image: url("../images/下載.jpg");
+    background-repeat: repeat;
+    /* 不要重複填滿 */
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    height: 100px;
+    width: 200px;
+}
+
+.topnav {
+    background-color: #3b3434;
+    overflow: hidden;
+    height: 80px;
+    position: fixed;
+    /* 固定定位 */
+    top: 0;
+    /* 距離網頁頂部 0 像素 */
+    width: 100%;
+    /* 寬度佔據整個網頁 */
+    z-index: 999;
+    /* 設定 z 軸優先順序 堆疊順序為 999。這個值越高，該元素在堆疊中的位置就越靠上 */
+}
+
+#naps {
+    float: right;
+    /* 如果使用top left %去移動位子，會造成縮小視窗時候字體會縮排 */
+    position: relative;
+    margin: 20px;
+    font-size: 30px;
+}
+
+#sla {
+    color: white;
+}
+
+#topbar {
+    color: white;
+    text-decoration: none;
+    /* 去除底線 */
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+
+#topbar:hover {
+    background-color: #656565;
+}
+
+
+.navbody ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 120px 0 0 0;
+}
+
+.navbody li {
+    display: inline-block;
+    padding: 50px 100px;
+    background-color: rgb(196, 153, 73);
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 10px 10px 5px 5px rgb(72, 69, 69);
+    transition-duration: 0.5s;
+}
+
+.navbody li:hover {
+    background-color: #656565;
+    box-shadow: none;
+}
+
+.navbody li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+#content1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 100px 300px;
+    opacity: 0;
+    animation: fade-in 2s ease-out 0.5s forwards;
+}
+
+#content2 {
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+    opacity: 0;
+    animation: fade-in 2s ease-out 1s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        /* 們將文本的不透明度設置為0，並將其向下平移20像素。 */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#videoss {
+    text-align: center;
+    margin: 500px 0 200px 0;
+}
+
+#videoss iframe {
+    display: flex;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px 5px rgb(89, 85, 85);
+    transition-duration: 0.5s;
+}
+
+#videoss iframe:hover {
+    box-shadow: none;
+    transform: translateY(-5px);
+}
+
+.text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+}
+
+
+/* @-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400 linear;
+    }
+}
+
+.text:nth-child(5n +1) {
+    stroke: #F2385A;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+    stroke: #F5A503;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text:nth-child(5n+ 3) {
+    stroke: #E9F1DF;
+    -webkit-animation-7delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+    stroke: #56D9CD;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.text:nth-child(5n+ 5) {
+    stroke: #3AA1BF;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+} */
+
+.content1 {
+    width: 100%;
+    min-width: 600px;
+    max-width: 1500px;
+    background-color: white;
+    margin: 0 auto;
+    /* 置中 */
+}
+
+main {
+    height: 700px;
+    width: 70%;
+    float: left;
+    margin: 0 auto;
+}
+
+.mainh2 {
+    color: black;
+    margin: 90px 0 0 0;
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    height: 910px;
+    width: 30%;
+    background-color: rgb(52, 42, 42)
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    clear: both;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    width: 100%;
+    background-color: black;
+    clear: both;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.bottonbottom {
+    background-color: #f1f1f1;
+    height: 200px;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.bottonbottom h4 {
+    color: red;
+    padding: 10px;
+}
+
+.branch {
+    background-color: rgb(196, 153, 73);
+    margin: 20px 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Meiryo', '微軟正黑體', '新細明體', Tahoma, Geneva, sans-serif;
+    justify-content: center;
+    /* 垂直(上下)居中 */
+    align-items: center;
+    /* 水平(左右)居中 */
+}
+
+.branch a {
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottonbottom1 {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    left: 100px;
+    background-color: rgb(196, 153, 73);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 50px;
+    list-style-type: none;
+    display: flex;
+    /* 使用 flexbox 布局 */
+    align-items: center;
+    /* 垂直(上下)居中 */
+    justify-content: center;
+    /* 水平(左右)居中 */
+    box-shadow: 10px 10px 5px 5px rgb(89, 85, 85);
+    transition-duration: 0.5s;
+}
+
+.bottonbottom1:hover {
+    background-color: #656565;
+    border-color: black;
+    border: 100px;
+    box-shadow: none;
+}
+
+.bottonbottom2 {
+    height: 80px;
+    width: 300px;
+    position: relative;
+    left: 600px;
+    bottom: 80px;
+    background-color: rgb(196, 153, 73);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 50px;
+    list-style-type: none;
+    display: flex;
+    /* 使用 flexbox 布局 */
+    align-items: center;
+    /* 垂直(上下)居中 */
+    justify-content: center;
+    /* 水平(左右)居中 */
+    box-shadow: 10px 10px 5px 5px rgb(89, 85, 85);
+    transition-duration: 0.5s;
+}
+
+.bottonbottom2:hover {
+    background-color: #656565;
+    border-color: black;
+    border: 100px;
+    box-shadow: none;
+}
+
+table {
+    border-color: white;
+    margin: 10px auto;
+    color: white;
+    border-collapse: collapse;
+    font-size: 30px;
+    text-align: center;
+}
+
+thead {
+    font-weight: bold;
+}
+
+table td,
+table th {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+
+}
+
+img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#text1 {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 0 0 50px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #ccc;
+    transition-duration: 0.5s;
+}
+
+#text1:focus {
+    outline: none;
+    border: 1px solid #4285f4;
+    box-shadow: 2px 2px 3px #4285f4;
+}
+
+#text1:hover {
+    transform: translateY(-5px);
+}
+
+#pppp {
+    background-color: #f1f1f1;
+    height: 450px;
+    color: white;
+    margin: 10px 0 0 0;
+    display: block;
+}
+
+#pppp div {
+    position: relative;
+    width: auto;
+    height: 100px;
+    margin: 20px 10px 0 0;
+    background-color: white;
+    text-align: left;
+    color: black;
+    display: block;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 5px 5px rgb(89, 85, 85);
+}
+
+#pppp div p {
+    position: relative;
+    padding: 30px 0 0 20px;
+    font-size: 30px;
+    font-family: 'Meiryo', '微軟正黑體', '新細明體', Tahoma, Geneva, sans-serif;
+    display: inline-block;
+}
+
+#pppp div span {
+    position: relative;
+    left: 70%;
+    font-size: 30px;
+}
+
+#bn {
+    position: relative;
+    left: 55%;
+    padding: 20px;
+    border-radius: 100px 100px 100px 100px;
+    background-color: rgb(196, 153, 73);
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 5px 5px rgb(89, 85, 85);
+    border-color: white;
+    transition-duration: 0.5s;
+}
+
+#bn:hover {
+    border: black;
+    border: 100px;
+}
+
+.ml1 {
+    font-weight: 900;
+    font-size: 3.5em;
+    margin: 3% 0 0 30%;
+}
+
+.ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+}
+
+.ml1 .line1 {
+    top: 0;
+    background-color: black;
+}
+
+.ml1 .line2 {
+    bottom: 0;
+    background-color: black;
+}
+
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+}
+
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0;
+}
+
+#blockapplication {
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 10px 10px 5px 5px rgb(89, 85, 85);
+    background-color: rgb(196, 153, 73);
+    margin: 20px 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Meiryo', '微軟正黑體', '新細明體', Tahoma, Geneva, sans-serif;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#blockapplication select {
+    text-align: left;
+    background-color: rgb(196, 153, 73);
+    padding: 0 170px;
+    border-color: rgb(196, 153, 73);
+    font-size: 30px;
+    font-family: 'Meiryo', '微軟正黑體', '新細明體', Tahoma, Geneva, sans-serif;
+    cursor: pointer;
+}
+
+#blockapplication:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+ul.share-buttons {
+    list-style: none;
+    padding: 0;
+}
+
+ul.share-buttons li {
+    display: inline;
+}
+
+ul.share-buttons .sr-only {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+body {
+    background: #222;
+    text-align: center;
+    font-size: 180%;
+    margin: 2em;
+    font-family: Calibri, arial, sans-serif;
+}
+
+.to-top {
+    color: black;
+    padding-top: 1.8em;
+    display: inline-block;
+    /* or block */
+    position: relative;
+    border-color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    left: 45%;
+    font-size: 32px;
+}
+
+.to-top:before {
+    content: '▲';
+    font-size: .9em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -.7em;
+    border: solid .13em black;
+    border-radius: 10em;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.3em;
+    border-color: inherit;
+    transition: transform .5s ease-in;
+}
+
+.to-top:hover {
+    color: rgb(196, 153, 73);
+    border-color: rgb(196, 153, 73);
+}
+
+.to-top:hover:before {
+    transform: rotate(360deg);
+}

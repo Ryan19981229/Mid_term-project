@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="zh-Hant-TW" />
+  <!-- HTTP等效;告訴IE瀏覽器使用最新的瀏覽器渲染引擎來顯示網頁
+    即使當前的IE版本不支持某些最新的網頁技術也可以正常顯示網頁。 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- viewport，width=device-width 指定了網頁的寬度應該等於設備的寬度，
+    而 initial-scale=1.0 則指定了網頁的初始縮放比例應該為 1.0。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 描述網頁的內容，搜索引擎也會使用這個描述來顯示網頁的簡要摘要。 -->
+  <meta name="description"
+    content="萊恩商業銀行官網提供熱門產品介紹，外幣匯率查詢、信用卡產品介紹、貸款方案資訊、熱門基金介紹…等；並提供您數位服務、網銀App相關資訊，讓您每次與本行往來都有更好的體驗。">
+  <meta name="author" content="Ryan Lee">
+  <!-- 告訴搜索引擎這個網頁的重點關鍵字。 -->
+  <meta name="keywords" content="萊恩銀行,萊恩商業銀行,銀行,萊恩結匯">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link rel="stylesheet" href="../CSS/表框.css">
+  <!-- 更改網頁名稱 -->
+  <title>萊恩銀行換匯網站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link href="../images/我的專案.png" rel="icon" type="image/png">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="http://127.0.0.1:5502/HTML/%E4%B8%BB%E9%A0%81.html">
+      <img id="logo" style="object-fit: fill;" src="../images/facebook_cover_photo_1.png">
+    </a>
+    <span style="font-size: 30px; font-weight: bold; color: white; font-family:Arial;">萊恩銀行線上結匯 資料登入</span>
+    <span id="naps">
+      <a href="tel:1234567890" id="topbar">聯絡我們(客服)</a>
+    </span>
+  </div>
+  <div class="content1">
+    <main>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+      <div class="testbox">
+        <h1>資料填寫</h1>
+
+        <form action="/">
+          <hr>
+          <div class="accounttype" style="margin: 0 0 0 30px;">
+            <input type="radio" value="None" id="radioOne" name="account" checked />
+            <label for="radioOne" class="radio" chec>個人</label>
+            <input type="radio" value="None" id="radioTwo" name="account" />
+            <label for="radioTwo" class="radio">公司</label>
+          </div>
+          <hr>
+          <label id="icon" for="name"><i class="icon-user"></i></label>
+          <input type="text" name="name" id="name" placeholder="名字" required />
+          <label id="icon" for="name"><i class="icon-envelope "></i></label>
+          <input type="text" name="name" id="name1" placeholder="信箱" required />
+          <label id="icon" for="name"><i class="icon-user"></i></label>
+          <input type="text" name="name" id="name2" placeholder="身分證" required />
+          <label id="icon" for="name"><i class="icon-shield"></i></label>
+          <input type="password" name="name" id="name3" placeholder="安全密碼" required />
+
+          <div class="gender">
+            <input type="radio" value="None" id="male" name="gender" checked />
+            <label for="male" class="radio" chec>男性</label>
+            <input type="radio" value="None" id="female" name="gender" />
+            <label for="female" class="radio">女性</label>
+          </div>
+          <p style="font-size: 15px;">請攜帶身分證件至分行提領，謝謝! <a href="#">詳細規範</a>.</p>
+          <a href="http://127.0.0.1:5502/HTML/%E6%88%90%E5%8A%9F.html" class="button" id="buttonios">送出</a>
+        </form>
+      </div>
+      <div class="outside">
+        <div class="head">
+          <div class="ears left"></div>
+          <div class="ears right"></div>
+          <div class="eyes left"></div>
+          <div class="eyes right"></div>
+          <div class="nose"></div>
+        </div>
+        
+        <div class="body">
+          <div class="w"></div>
+          <div class="hand left">
+            <div class="finger f1"></div>
+            <div class="finger f2"></div>
+            <div class="finger f3"></div>
+          </div>
+          <div class="hand right">
+            <div class="finger f1"></div>
+            <div class="finger f2"></div>
+            <div class="finger f3"></div>
+          </div>
+          <div class="tail">
+            <div class="bowTie"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <br>
+      <ul class="share-buttons" data-source="simplesharingbuttons.com">
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=&quote=" title="Share on Facebook" target="_blank"
+            onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img
+              style="width: 40px; background-color: white;" alt="Share on Facebook" src="../images/Facebook.png" /></a></li>
+        <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img
+            style="width: 40px; background-color: white;" alt="Tweet" src="../images/Twitter.png" /></a></li>
+        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank"
+            title="Share on LinkedIn"
+            onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img
+            style="width: 40px; background-color: white;" alt="Share on LinkedIn" src="../images/LinkedIn.png" /></a></li>
+        <li><a href="mailto:?subject=&body=:%20" target="_blank" title="Send email"
+            onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img
+            style="width: 40px; background-color: white;" alt="Send email" src="../images/Email.png" /></a></li>
+      </ul>
+      <p style="margin:50px 0 0 0 ">為了瀏覽網站更安全方便，建議您使用支援HTML5的瀏覽器包含：Microsoft IE 11、Microsoft Edge、Google
+        Chrome、Mozilla
+        Firefox及Safari瀏覽器之作業環境</p>
+      <p style="margin:50px 0 0 0 ">萊恩銀行版權所有</p>
+      <p style="margin:0 0 0 0 ">Ryan Bank All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+<script>
+  const imformationName = document.getElementById('buttonios');
+  imformationName.addEventListener('click', (event) => {
+    imforation = document.getElementById("name").value
+    imforation1 = document.getElementById("name1").value
+    imforation2 = document.getElementById("name2").value
+    imforation3 = document.getElementById("name3").value
+    if (imforation == "" || imforation1 == "" || imforation2 == "" || imforation3 == "") {
+      event.preventDefault();
+      alert('請確實填寫資料!');
+    }else{
+      alert("恭喜你預約申購完成! 請您在7日內攜帶證件前往辦理。謝謝!")
+    }
+  })
+</script>
+
+</html>

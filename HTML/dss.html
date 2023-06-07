@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>購物首頁</title>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+ $(function() {
+  $('.add-to-cart').click(function() {
+   let productId = $(this).data('product-id')
+   let quantity = $(this).closest('div').find('.quantity').val() 
+   let cart = JSON.parse(localStorage.getItem('cart')) || {} 
+   if (cart[productId]) { // 如果商品已經在購物車中
+    cart[productId] += parseInt(quantity)
+   } else {
+    cart[productId] = parseInt(quantity)
+   }
+   localStorage.setItem('cart', JSON.stringify(cart))
+   alert('已加入購物車！')
+  })
+ })
+</script>
+<body>
+ <h1>商品列表</h1>
+ <div>
+  <h2>商品 a</h2>
+  <p>數量：<input type="number" min="1" value="1" class="quantity"></p>
+  <button class="add-to-cart" data-product-id="a">加入購物車</button>
+ </div>
+ <div>
+  <h2>商品 b</h2>
+  <p>數量：<input type="number" min="1" value="1" class="quantity"></p>
+  <button class="add-to-cart" data-product-id="b">加入購物車</button>
+ </div>
+ <div>
+  <h2>商品 c</h2>
+  <p>數量：<input type="number" min="1" value="1" class="quantity"></p>
+  <button class="add-to-cart" data-product-id="c">加入購物車</button>
+ </div>
+ <div>
+ <a href="簡易購物車測試.html">購物車</a>
+ </div>
+</body>
+</html>

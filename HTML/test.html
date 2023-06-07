@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Border Color on Dropdown Click</title>
+	<style>
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown:hover .dropdown-toggle {
+			border-color: blue;
+		}
+
+		.dropdown-toggle {
+			border: 1px solid black;
+			padding: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="dropdown">
+			<div class="dropdown-toggle">Dropdown</div>
+			<div class="dropdown-content">
+				<a href="#">Option 1</a>
+				<a href="#">Option 2</a>
+				<a href="#">Option 3</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const dropdown = document.querySelector('.dropdown');
+		const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+		dropdownToggle.addEventListener('click', function() {
+			dropdown.classList.toggle('active');
+		});
+
+		document.addEventListener('click', function(event) {
+			if (!dropdown.contains(event.target)) {
+				dropdown.classList.remove('active');
+			}
+		});
+	</script>
+</body>
+</html>
